@@ -28,3 +28,7 @@ For preprocessing our data, we're going to use TensorFlow 2.x. The whole premise
 For our machine learning model, we're going to be using a pretrained deep learning model from TensorFlow Hub.
 
 The process of using a pretrained model and adapting it to your own problem is called transfer learning. We do this because rather than train our own model from scratch (could be timely and expensive), we leverage the patterns of another model which has been trained to classify images.
+
+You will need to download this folder to run the code:
+
+https://drive.google.com/drive/folders/1Q76-8f55pMm3UWrVY_ORa2CpuBBxChod?usp=sharing
