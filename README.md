@@ -2,6 +2,8 @@
 
 An end-to-end multi-class image classifier capable of identifying 120 different dog breeds using Transfer Learning.
 
+You can access the notebook with google colab:
+
 <a href="https://colab.research.google.com/drive/1ukulgemKLd8uMpC3apFtm4rK7A9-Chuu?usp=sharing#scrollTo=4UcnB20mNKrj">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
