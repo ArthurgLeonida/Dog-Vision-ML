@@ -1,41 +1,19 @@
-# Dog-Vision-ML
+# End-to-End Dog Breed Classification 🐕
 
-## Overview
-Dog breed classification is a challenging yet exciting application of machine learning. Have you ever seen a dog and wondered what breed it is? In this project, I use machine learning to identify different dog breeds based on images.
+An end-to-end multi-class image classifier capable of identifying 120 different dog breeds using Transfer Learning.
 
-This project is based on the Kaggle Dog Breed Identification competition dataset, which contains over 10,000 labeled images across 120 different dog breeds. The task falls under multi-class image classification, meaning the model must distinguish between multiple categories rather than just two (e.g., dogs vs. cats).
+<a href="https://colab.research.google.com/drive/1ukulgemKLd8uMpC3apFtm4rK7A9-Chuu?usp=sharing#scrollTo=4UcnB20mNKrj">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
-## Why does this matter?
+## 📊 Results
+* **Architecture:** MobileNetV2 (feature extractor) + Custom Dense Head.
+* **Training:** Optimized using Adam with Categorical Crossentropy.
+* **Performance:** Achieved ~99% training accuracy and ~66% validation accuracy on the initial 1000-image subset.
 
-Multi-class image classification is widely used in real-world applications, including:
+## 🛠️ Technical Highlights
+* **Data Pipeline:** Implemented efficient TensorFlow `BatchDataset` pipelines for GPU acceleration.
+* **Experiment Tracking:** utilized TensorBoard callbacks to monitor loss curves and prevent overfitting.
+* **Inference Visualization:** Created custom prediction plotting to analyze model confidence levels against ground truth.
 
-* Self-driving cars (identifying pedestrians, vehicles, and objects)
-* E-commerce (automatic product tagging)
-* Healthcare (diagnosing skin conditions from images)
-
-## Project Workflow
-
-The machine learning pipeline follows these steps:
-
-1. Get data ready (download from Kaggle, store, import).
-2. Prepare the data (preprocessing, the 3 sets, X & y).
-3. Choose and fit/train a model (TensorFlow Hub, tf.keras.applications, TensorBoard, EarlyStopping).
-4. Evaluating a model (making predictions, comparing them with the ground truth labels).
-5. Improve the model through experimentation (start with 1000 images, make sure it works, increase the number of images).
-6. Save, sharing and reloading your model (once you're happy with the results).
-
-## Technologies Used
-
-* TensorFlow 2.x – For deep learning and model training
-* TensorFlow Hub – Pretrained model for transfer learning
-* Matplotlib & Seaborn – Data visualization
-* Pandas & NumPy – Data processing
-
-You will need to download this folder to run the code:
-
-https://drive.google.com/drive/folders/1Q76-8f55pMm3UWrVY_ORa2CpuBBxChod?usp=sharing
-
-If you want to see it directly on Google Colab, here is the link:
-
-https://colab.research.google.com/drive/1ukulgemKLd8uMpC3apFtm4rK7A9-Chuu?usp=sharing
-
+<img width="1979" height="993" alt="Preds" src="https://github.com/user-attachments/assets/9d1fd1af-e8bb-4bba-a33c-a3bc5e2f199e" />
